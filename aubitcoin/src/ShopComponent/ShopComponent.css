@@ -1,0 +1,32 @@
+.shopBox{
+    background-color: #222732;
+    width: 261px;
+    height: 189px;
+    border: #222732 1px solid;
+    border-radius: 13px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.shopIm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.shopName {
+    text-shadow: 2px 2px black; ;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-family: "Arial Black";
+    width: 100%;
+    
+  }
+

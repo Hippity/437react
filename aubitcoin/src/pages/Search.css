@@ -1,0 +1,26 @@
+:root{
+    --secondaryBack: #222732;
+    --primaryBack: #191d24;
+    --ourYellow: #f3c317;
+    --ourLightRed: #ff0000;
+    --ourGreen: #1a8926;
+    --ourRed: #891a1a;
+    --ourPink: #bf24c2;
+    --ourWhite: #ffffff;
+    font-family: "Arial Black";
+}
+
+  input[type=search]
+  {
+      background-color: transparent;
+      border: solid white 2px;
+      border-radius: 13px;
+      height: 3rem;
+      width:30vw;
+      font-size: large;
+      color: white;
+  }
+
+  ::placeholder{
+      color: whitesmoke;
+  }

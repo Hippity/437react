@@ -1,0 +1,161 @@
+:root {
+  --secondaryBack: #222732;
+  --primaryBack: #191d24;
+  --ourYellow: #f3c317;
+  --ourLightRed: #ff0000;
+  --ourGreen: #1a8926;
+  --ourRed: #891a1a;
+  --ourPink: #bf24c2;
+  --ourGrey: #808080;
+  --ourWhite: #ffffff;
+  font-family: "Arial Black";
+}
+
+body {
+  background-color: var(--primaryBack);
+}
+
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+body::-webkit-scrollbar-track {
+  background: var(--primaryBack);
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--secondaryBack);
+}
+
+.navbar {
+  height: 100vh;
+  width: 5rem;
+  background-color: var(--secondaryBack);
+}
+
+.navbar-li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.last {
+  margin-top: auto;
+}
+
+.navbar-icon:hover {
+  transition: 600ms;
+  color: var(--ourWhite);
+}
+
+.white-icon {
+  -webkit-filter: brightness(0%) invert(1);
+}
+
+.white-icon-hover:hover {
+   transition: 200ms;
+  -webkit-filter: brightness(0%) invert(1);
+}
+
+.logoIm {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  object-position: -20px -20px;
+}
+
+.bubbles {
+  position: fixed;
+  margin-left: 12rem;
+}
+
+.avatarBox {
+  margin-left: 5vw;
+  margin-top: 20vh;
+  align-items: center;
+}
+
+.balanceBox {
+  align-items: center;
+  margin-left: 2vw;
+  padding: 0;
+}
+
+.balanceIm {
+  width: 80px;
+  height: 80px;
+}
+
+.tabs {
+  margin-top: 0vh;
+  margin-left: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  font-family: sans-serif;
+}
+
+.tabs__label {
+  color: white;
+  font-family: "Arial";
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.tabs__radio {
+  display: none;
+}
+
+.tabs__content {
+  order: 1;
+  margin-top: 3vh;
+  height: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 100vw;
+  line-height: 1.5;
+  font-size: 0.9em;
+  display: none;
+}
+
+.tabs__content::-webkit-scrollbar {
+  width: 0.4rem;
+}
+.tabs__content::-webkit-scrollbar-thumb {
+  background: var(--secondaryBack);
+}
+.tabs__content::-webkit-scrollbar-track {
+  background: var(--primaryBack);
+}
+
+.tabs__radio:checked + .tabs__label {
+  font-weight: bold;
+  background-color: var(--secondaryBack);
+  border: var(--secondaryBack) solid 1px;
+  border-radius: 13px;
+}
+
+.tabs__radio:checked + .tabs__label + .tabs__content {
+  display: initial;
+}
+
+html {
+  overflow: hidden;
+}
+
+
+.wrapper {
+  font-family: Arial;
+  margin-top: 50px;
+  width: 30vw;
+  background-color: var(--ourGrey);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formBox{
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
